@@ -467,10 +467,18 @@
   top: 7px;
 }
 
-.time{
+/* .time{
   position: relative;
   width: 20%;
   height: 100%;
+} */
+
+.time{
+  color: #ffffff;
+  letter-spacing: 0.07px;
+  width: fit-content;
+  font-family: "Poppins", Helvetica;
+  font-size: 12px;
 }
 
 .time-input-area{
@@ -645,14 +653,7 @@
   font-size: 12px;
 }
 
-.time{
-  color: #ffffff;
-  letter-spacing: 0.07px;
-  width: fit-content;
-  font-family: "Poppins", Helvetica;
-  font-size: 12px;
-  opacity: 0.5;
-}
+
 
 
 

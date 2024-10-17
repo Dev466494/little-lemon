@@ -27,8 +27,8 @@ const Main = () => {
 
     validationSchema: Yup.object({
       fullName: Yup.string().required("Required"),
-      phoneNumber: Yup.string().required("Required"),
-      // numberOfPeople: Yup.string().required("Please select number of people"),
+      // phoneNumber: Yup.string().required("Required"),
+      phoneNumber: Yup.string().email("Invalid email address").required("Required"),
       date: Yup.string().required("Required"),
       time: Yup.string().required("Required"),
     }),
@@ -147,11 +147,12 @@ const Main = () => {
 
                 <div className="phone-number">
                   <div className="input-line" isInvalid={formik.touched.phoneNumber && formik.errors.phoneNumber}>
-                    <div className="input-lable">Phone Number*</div>
+                    <div className="input-lable">Email*</div>
                     <input
                       className="phone-number-input-area"
                       name="phoneNumber"
                       id="phoneNumber"
+                      type="email"
                       {...formik.getFieldProps('phoneNumber')}
                     />
                   </div>
